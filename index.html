@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Matri Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+
+<body>   
+    <header>
+        <a href="#" class="logo">MATRI</a>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#artefacts">Artifacts</a></li>
+            <li><a href="#portfolio">Blogs</a></li>
+            
+        </ul>
+    </header>
+
+
+
+    <section class="home" id="home">
+        <img src="C:\Users\user\Downloads\Personal-Portfolio-master\Personal-Portfolio-master\First-Section-Code-main\Hero-Sections\90905-London-Natural-History-Museum 1 (1).png" id="museum_front">
+        
+        <img src="C:\Users\user\Downloads\Personal-Portfolio-master\Personal-Portfolio-master\First-Section-Code-main\Hero-Sections\Group_1-removebg-preview.png" id="museum_back">
+        <h2 id="text">MATRI MUSEUM</h2>
+        <a href="#sec" id="btn">Explore</a>
+        
+    </section>
+    <script>
+        let museum_front = document.getElementById('museum_front');
+        let museum_back = document.getElementById('museum_back');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+       
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            museum_front.style.top = value * 0.25 + 'px';
+            museum_back.style.top = value * 0.5 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</section>
+
+
+<section class="about" id="about">
+    <div class="q">
+        <div class="about-img">
+                <img src="C:\Users\user\Downloads\Personal-Portfolio-master\Personal-Portfolio-master\First-Section-Code-main\Hero-Sections\90905-London-Natural-History-Museum 1 (1).png" alt="">
+          
+            
+        </div> 
+        <div class="about-content"> 
+            <h2 class="heading">About <span>US</span></h2>
+            <h3>Hi, We are here to take you through the history again but this time from a feminine lens!</h3>
+            <p>History often overlooks the contributions of women.
+                Matri sheds light on these inspiring stories, ensuring their rightful place in history.
+                By recognizing their achievements, we inspire future generations to fight for their dreams, regardless of gender.
+                <br>
+                Matri is an innovative VR museum dedicated to these remarkable women.
+                Using cutting-edge VR technology, we bring their stories to life in an immersive and interactive experience.
+                 </p> 
+            <p>  <div class="container py-5 text-white">
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-3">
+                        <span id="count1" class="display-4"></span>
+                        <span class="heading-small">Artifacts</span>
+                    </div>
+                    <div class="col-md-3">
+                        <span id="count2" class="display-4"></span>
+                        <span class="heading-small">Stories unveiled</span>
+                    </div>
+                    <div class="col-md-3">
+                        <span id="count3" class="display-4"></span>
+                        <span class="heading-small">Blogs</span>
+                    </div>
+                    <div class="col-md-3">
+                        <span id="count4" class="display-4"></span>
+                        <span class="heading-small">Happy users</span>
+                    </div>
+                </div>
+            </div>      
+            </div>
+        </div></p>
+        </div>     
+</section>
+
+<section class="artefacts" id="artefacts">
+    <div class="artefacts-content"> 
+        <h3>MATRI ARTIFACTS</h3>
+    </div>
+<div class="gallery-wrap">
+    <div class="gallery">
+        <div>
+            <span><img src="cannaon_2_Mat_BaseColor.png" ></span>
+            <span><img src="dandpatta_Mat_BaseColor.png" ></span>
+            <span><img src="axe_2.png" ></span>
+
+        </div>
+        <div>
+            <span><img src="baghnakh_2_Mat_BaseColor.png" ></span>
+            <span><img src="kirach_2.png" ></span>
+            <span><img src="shield_2.png" ></span>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">MATRI <span>BLOGS</span></h2>
+     <div class= "portfolio-container">
+                <div class="portfolio-box">
+                    <img src="57e85c2fe03281ebf06ea2ddd467c0ad (1).jpeg" alt="">   
+                    <div class="portfolio-layer">
+                        <h4>Jhansi Laxmi Bai</h4>
+                        <p>The first indian womam freedom fighter who broke the norms.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+            <div class="portfolio-box">
+                <img src="2.jpg" alt="">   
+                <div class="portfolio-layer">
+                    <h4>Sarojini Naidu</h4>
+                    <p>The Nightingale of India</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+ 
+        <div class="portfolio-box">
+            <img src="3.jpg" alt="">   
+            <div class="portfolio-layer">
+                <h4>Annie Besant</h4>
+                <p>A prominent British socialist, women's rights activist who played a significant role in various social and political movements.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="4.jpg" alt="">   
+            <div class="portfolio-layer">
+                <h4>Aruna Asaf Ali</h4>
+                <p>Indian independence activist and freedom fighter.
+                </p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="5.jpg" alt="">   
+            <div class="portfolio-layer">
+                <h4>Usha Mehta</h4>
+                <p>Indian freedom fighter and prominent figure in Quit India Movement.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+  
+
+        <div class="portfolio-box">
+            <img src="6.jpg" alt="">   
+            <div class="portfolio-layer">
+                <h4>Vijaya Laxmi Pandit</h4>
+                <p> Indian diplomat, politician, and sister of Jawaharlal Nehru.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    
+<body>
+    <button class="chatbot-toggler">
+        <i class="bx bx-message-dots" style='font-size: 24px; color: white;'></i>
+    </button>
+    <div class="chatbot">
+      <header>
+        <h2>Chatbot</h2>
+        <span class="close-btn material-symbols-outlined">close</span>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <span class="material-symbols-outlined">smart_toy</span>
+          <p>Hi there 👋<br>How can I help you today?</p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+        <span id="send-btn" class="material-symbols-rounded">send</span>
+      </div>
+    </div>
+  </body>
+</html>
+</section> 
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
